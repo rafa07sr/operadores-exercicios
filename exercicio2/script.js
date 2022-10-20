@@ -9,12 +9,12 @@
 
  
 
-    console.log ("O primeiro numero é maior que segundo?", "a diferença é de ",subNum,"e a resposta é", num1 > num2 )
-    console.log ("O primeiro numero é igual ao segundo?", num1 === num2)
-    console.log ("O primeiro numero é divisível pelo segundo? a divisão dos numeros é",  resultado1, Boolean(resultado1 % 2))
-    console.log ("O segundo numero é divisível pelo primeiro? a divisão dos numeros é", resultado2 , Boolean(resultado2 % 2))
+    console.log ("O primeiro numero é maior que segundo?", "a diferença é de ",subNum,"e a resposta é", (num1 > num2) )
+    console.log ("O primeiro numero é igual ao segundo?", (num1 === num2))
+    console.log ("O primeiro numero é divisível pelo segundo? a divisão dos numeros é", (num1 % num2===0))
+    console.log ("O segundo numero é divisível pelo primeiro? a divisão dos numeros é", (num2 % num1===0))
 
-
+  
 
 
 /*O primeiro numero é maior que segundo? true

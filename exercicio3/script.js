@@ -61,7 +61,7 @@ d)  Desconto do INSS 5% do salário */
 
 
 const salario = 2000
-const auxCreche = 45.50
+const auxCreche = 45.50 * 2 
 const comiJan = 5784.50 * 0.10
 const comiFev = 3418.41 * 0.10
 const comiMar = 4124.10 * 0.10
@@ -83,7 +83,7 @@ const comiJun = 9450.00 * 0.10
   const desFev = salTotal2 - (salTotal2 * 0.05)
   const salTotFev = auxCreche + desFev
 
-  const desMar = salTotal3 - (salTotal3*0.05)
+  const desMar = salTotal3 - (salTotal3 * 0.05)
   const salTotMar = auxCreche + desMar
 
   const desAbr = salTotal4 - (salTotal4 * 0.05)
@@ -95,12 +95,12 @@ const comiJun = 9450.00 * 0.10
   const desJun = salTotal6 - (salTotal6 * 0.05)
   const salTotJun = auxCreche + desJun
 
-   const totRece1 = salTotal + auxCreche 
-   const totRece2 = salTotal2 + auxCreche 
-   const totRece3 = salTotal3 + auxCreche 
-   const totRece4 = salTotal4 + auxCreche 
-   const totRece5 = salTotal5 + auxCreche 
-   const totRece6 = salTotal6 + auxCreche 
+   const totRece1 = desJan + auxCreche 
+   const totRece2 = desFev + auxCreche 
+   const totRece3 = desMar + auxCreche 
+   const totRece4 = desAbr + auxCreche 
+   const totRece5 = desMai + auxCreche 
+   const totRece6 = desJun + auxCreche 
 
    const total = totRece1 + totRece2 + totRece3 + totRece4 + totRece5 + totRece6
    const media = total / 6
@@ -115,9 +115,6 @@ console.log( "O total do salario de Abril foi", salTotAbr)
 console.log( "O total do salario de Maio foi", salTotMai)
 console.log( "O total do salario de Junho foi", salTotJun)
 console.log ("A media de salario é", media)
-
-
-
 
 
 
